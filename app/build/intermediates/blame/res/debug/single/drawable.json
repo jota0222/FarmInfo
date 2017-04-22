@@ -24,8 +24,16 @@
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_dialog_material_background.xml"
     },
     {
+        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bovinos.png",
+        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\bovinos.png"
+    },
+    {
         "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_voice_search_api_material.xml"
+    },
+    {
+        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\porcinos.png",
+        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\porcinos.png"
     },
     {
         "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
@@ -52,6 +60,10 @@
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
+        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\caninos.png",
+        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\caninos.png"
+    },
+    {
         "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_ic_go_search_api_material.xml"
     },
@@ -62,6 +74,10 @@
     {
         "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\aves.png",
+        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\aves.png"
     },
     {
         "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_search_api_material.xml",

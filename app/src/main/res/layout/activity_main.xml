@@ -10,8 +10,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ingsoft.juandavids.farminfo.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <GridView
+        android:id="@+id/animalGridView"
+        android:numColumns="auto_fit"
+        android:columnWidth="120dp"
+        android:stretchMode="spacingWidthUniform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>

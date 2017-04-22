@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">FarmInfo</string>
+    <string name="animal_icon">Ícono del animal</string>
 </resources>
