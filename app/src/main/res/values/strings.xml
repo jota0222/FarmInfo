@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">FarmInfo</string>
     <string name="animal_icon">Ícono del animal</string>
+    <string-array name="animal_names">
+        <item>Aves de Corral</item>
+        <item>Bovinos</item>
+        <item>Caninos</item>
+        <item>Caprinos</item>
+        <item>Conejos</item>
+        <item>Equinos</item>
+        <item>Felinos</item>
+        <item>Aves Ornamentales</item>
+        <item>Ovinos</item>
+        <item>Porcinos</item>
+    </string-array>
 </resources>
