@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.ingsoft.juandavids.farminfo.R;
@@ -58,6 +59,7 @@ public class AnimalAdapter extends BaseAdapter {
         }
 
         AnimalInfo animal = animalList.get(i);
+        holder.animalInfo = animal;
         holder.animalImage.setImageResource(animal.imageId);
         holder.animalName.setText(animal.name);
 
@@ -65,12 +67,3 @@ public class AnimalAdapter extends BaseAdapter {
     }
 }
 
-class ViewHolder{
-    ImageView animalImage;
-    TextView animalName;
-
-    ViewHolder(View v){
-        this.animalImage = (ImageView) v.findViewById(R.id.animalImageView);
-        this.animalName = (TextView) v.findViewById(R.id.animalTextView);
-    }
-}

@@ -28,6 +28,10 @@
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
+        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_animal.xml",
+        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\layout\\activity_animal.xml"
+    },
+    {
         "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.3.1\\res\\layout\\abc_alert_dialog_material.xml"
     },

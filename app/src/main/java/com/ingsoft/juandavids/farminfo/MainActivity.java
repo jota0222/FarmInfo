@@ -1,5 +1,6 @@
 package com.ingsoft.juandavids.farminfo;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,7 +10,9 @@ import android.widget.GridView;
 
 import com.ingsoft.juandavids.farminfo.utilities.AnimalAdapter;
 import com.ingsoft.juandavids.farminfo.utilities.AnimalInfo;
+import com.ingsoft.juandavids.farminfo.utilities.ViewHolder;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
@@ -38,10 +41,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         animalGrid = (GridView) findViewById(R.id.animalGridView);
         animalGrid.setAdapter(new AnimalAdapter(this, animalList));
+        animalGrid.setOnItemClickListener(this);
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-
+        Intent intent = new Intent(this, AnimalActivity.class);
+        ViewHolder holder = (ViewHolder) view.getTag();
+        intent.putExtra("animalGroup", holder.animalInfo);
+        startActivity(intent);
     }
 }
