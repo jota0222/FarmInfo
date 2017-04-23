@@ -28,6 +28,14 @@ public class DatabaseActivity extends AppCompatActivity {
         animalInfo = intent.getParcelableExtra("animalGroup");
 
         setFonts();
+
+        /*
+        *TODO: llamada a la API de SOCRATA si dataBase == @string/medicine se busca en datos abiertos de animales
+        * sino se busca en plantas de beneficio animal.
+        * Se debe crear una tabla para mostrar la información adquirida
+        */
+
+        //TODO: implementar búsqued o filtros
     }
 
     @SuppressLint("SetTextI18n")
