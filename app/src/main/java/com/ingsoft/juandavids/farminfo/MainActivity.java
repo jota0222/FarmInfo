@@ -25,14 +25,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Agregando fuentes
-        typeFaces = new ArrayList<>();
-        typeFaces.add(Typeface.createFromAsset(getAssets(),"fonts/blackjar.ttf"));
-        typeFaces.add(Typeface.createFromAsset(getAssets(),"fonts/bloggersans.ttf"));
-
-        // Mejorando vista del título
-        TextView title = (TextView) findViewById(R.id.AppTitleTextView);
-        title.setTypeface(typeFaces.get(0));
+        setFonts();
 
         Resources res = this.getResources();
 
@@ -42,6 +35,17 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         animalGrid.setAdapter(new AnimalAdapter(this, animalList));
         animalGrid.setOnItemClickListener(this);
 
+    }
+
+    private void setFonts() {
+        // Agregando fuentes
+        typeFaces = new ArrayList<>();
+        typeFaces.add(Typeface.createFromAsset(getAssets(),"fonts/blackjar.ttf"));
+        typeFaces.add(Typeface.createFromAsset(getAssets(),"fonts/bloggersans.ttf"));
+
+        // Mejorando vista del título
+        TextView title = (TextView) findViewById(R.id.AppTitleTextView);
+        title.setTypeface(typeFaces.get(0));
     }
 
     @Override

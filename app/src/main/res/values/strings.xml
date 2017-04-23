@@ -2,6 +2,9 @@
     <string name="app_name">FarmInfo</string>
     <string name="animal_icon">Ícono del animal</string>
     <string name="back_text">Volver</string>
+    <string name="medicine">Medicamentos</string>
+    <string name="slaughterhouses">Plantas de Beneficio</string>
+    <string name="search">Buscar</string>
     <string-array name="animal_names">
         <item>Aves de Corral</item>
         <item>Bovinos</item>

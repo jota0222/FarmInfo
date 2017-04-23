@@ -4,9 +4,9 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="161198476743317"
+    timestamp="175819254585973"
     token="-7358898956637204491"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
@@ -22,15 +22,22 @@
         duration="0" />
 
     <artifact
-        location="C:\Android\AndroidStudioProjects\FarmInfo\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\Android\AndroidStudioProjects\FarmInfo\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="161198476743317"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="175377657458703"
+        verifier="R_CLASS_CHANGE" >
         <artifact
             location="C:\Android\AndroidStudioProjects\FarmInfo\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="175819254585973"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Android\AndroidStudioProjects\FarmInfo\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

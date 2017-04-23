@@ -30,7 +30,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/AppTitleTextView"
         android:layout_alignParentStart="true"
-        android:id="@+id/scrollView2">
+        android:id="@+id/scrollView">
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -50,8 +50,49 @@
                 android:paddingRight="12dp"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:id="@+id/selectedGroupTextView" />
+                android:id="@+id/selectedGroupTextView"
+                tools:ignore="HardcodedText" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="12dp"
+                android:layout_below="@+id/selectedGroupTextView"
+                android:layout_alignParentStart="true">
+
+                <Button
+                    android:text="@string/medicine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:background="@drawable/buttonpush"
+                    android:id="@+id/btnMedicine"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp"
+                    android:onClick="btnMedicine_click"
+                    android:textAllCaps="false"/>
+
+                <Button
+                    android:text="@string/slaughterhouses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btnSlaughterhouse"
+                    android:layout_below="@+id/btnMedicine"
+                    android:layout_marginTop="25dp"
+                    android:textSize="21sp"
+                    android:textColor="#FFFFFF"
+                    android:background="@drawable/buttonpush"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"
+                    android:onClick="btnSlaughterhouse_click"
+                    android:textAllCaps="false"/>
+
+            </RelativeLayout>
+
         </RelativeLayout>
+
     </ScrollView>
 
     <ImageView
@@ -63,7 +104,7 @@
         android:scaleType="fitCenter"
         android:contentDescription="@string/back_text"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/scrollView2"
+        android:layout_above="@+id/scrollView"
         android:layout_alignParentTop="true"
         android:clickable="true"
         android:onClick="btnBack_click"/>

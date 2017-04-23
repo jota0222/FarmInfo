@@ -20,6 +20,7 @@ public class AnimalInfo implements Parcelable{
         this.imageId = imageId;
         this.name = name;
         this.animalTypesInBD = new ArrayList<>();
+        this.animalTypesInBD.add("Mixto");
     }
 
     private AnimalInfo(Parcel source){

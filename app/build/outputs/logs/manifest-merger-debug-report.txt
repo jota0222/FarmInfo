@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:4:5-46
 		INJECTED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml
@@ -16,7 +16,7 @@ ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifes
 		INJECTED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:6:5-21:19
+ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:6:5-22:19
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Android\AndroidStudioProjects\FarmInfo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Android\AndroidStudioProjects\FarmInfo\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Android\AndroidStudioProjects\FarmInfo\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\AndroidManifest.xml:29:5-20
@@ -56,6 +56,10 @@ activity#com.ingsoft.juandavids.farminfo.AnimalActivity
 ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:20:9-52
 	android:name
 		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:20:19-49
+activity#com.ingsoft.juandavids.farminfo.DatabaseActivity
+ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:21:9-54
+	android:name
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:21:19-51
 uses-sdk
 INJECTED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Android\AndroidStudioProjects\FarmInfo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\AndroidManifest.xml:21:5-23:78

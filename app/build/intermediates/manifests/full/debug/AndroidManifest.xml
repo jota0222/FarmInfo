@@ -26,6 +26,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.ingsoft.juandavids.farminfo.AnimalActivity" />
+        <activity android:name="com.ingsoft.juandavids.farminfo.DatabaseActivity" />
     </application>
 
 </manifest>
