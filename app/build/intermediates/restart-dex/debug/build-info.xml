@@ -4,8 +4,9 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.0"
-    timestamp="108581907779591"
-    token="-7358898956637204491" >
+    timestamp="161198476743317"
+    token="-7358898956637204491"
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
@@ -20,13 +21,16 @@
         name="verifier"
         duration="0" />
 
+    <artifact
+        location="C:\Android\AndroidStudioProjects\FarmInfo\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
     <build
-        timestamp="108529189544616"
+        timestamp="161198476743317"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Android\AndroidStudioProjects\FarmInfo\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="108581907779591" />
 
 </instant-run>

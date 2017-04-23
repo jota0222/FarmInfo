@@ -18,6 +18,8 @@
         android:contentDescription="@string/animal_icon" />
 
     <TextView
+        android:text="Animal Name"
+        android:textSize="16sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/animalTextView"

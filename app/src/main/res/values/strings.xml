@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">FarmInfo</string>
     <string name="animal_icon">Ícono del animal</string>
+    <string name="back_text">Volver</string>
     <string-array name="animal_names">
         <item>Aves de Corral</item>
         <item>Bovinos</item>

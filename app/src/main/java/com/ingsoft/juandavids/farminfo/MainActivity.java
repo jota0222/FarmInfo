@@ -2,52 +2,52 @@ package com.ingsoft.juandavids.farminfo;
 
 import android.content.Intent;
 import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.TextView;
 
 import com.ingsoft.juandavids.farminfo.utilities.AnimalAdapter;
 import com.ingsoft.juandavids.farminfo.utilities.AnimalInfo;
-import com.ingsoft.juandavids.farminfo.utilities.ViewHolder;
+import com.ingsoft.juandavids.farminfo.utilities.AnimalViewHolder;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
     GridView animalGrid;
+    public ArrayList<Typeface> typeFaces;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Agregando fuentes
+        typeFaces = new ArrayList<>();
+        typeFaces.add(Typeface.createFromAsset(getAssets(),"fonts/blackjar.ttf"));
+        typeFaces.add(Typeface.createFromAsset(getAssets(),"fonts/bloggersans.ttf"));
+
+        // Mejorando vista del título
+        TextView title = (TextView) findViewById(R.id.AppTitleTextView);
+        title.setTypeface(typeFaces.get(0));
+
         Resources res = this.getResources();
-        String[] animalStrings = res.getStringArray(R.array.animal_names);
 
-        ArrayList<AnimalInfo> animalList = new ArrayList<>();
-
-        animalList.add(new AnimalInfo(R.drawable.aves, animalStrings[0]));
-        animalList.add(new AnimalInfo(R.drawable.ornamentales, animalStrings[7]));
-        animalList.add(new AnimalInfo(R.drawable.bovinos, animalStrings[1]));
-        animalList.add(new AnimalInfo(R.drawable.caninos, animalStrings[2]));
-        animalList.add(new AnimalInfo(R.drawable.caprinos, animalStrings[3]));
-        animalList.add(new AnimalInfo(R.drawable.conejos, animalStrings[4]));
-        animalList.add(new AnimalInfo(R.drawable.equinos, animalStrings[5]));
-        animalList.add(new AnimalInfo(R.drawable.felinos, animalStrings[6]));
-        animalList.add(new AnimalInfo(R.drawable.ovinos, animalStrings[8]));
-        animalList.add(new AnimalInfo(R.drawable.porcinos, animalStrings[9]));
+        ArrayList<AnimalInfo> animalList = AnimalInfo.loadAnimals(res);
 
         animalGrid = (GridView) findViewById(R.id.animalGridView);
         animalGrid.setAdapter(new AnimalAdapter(this, animalList));
         animalGrid.setOnItemClickListener(this);
+
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         Intent intent = new Intent(this, AnimalActivity.class);
-        ViewHolder holder = (ViewHolder) view.getTag();
+        AnimalViewHolder holder = (AnimalViewHolder) view.getTag();
         intent.putExtra("animalGroup", holder.animalInfo);
         startActivity(intent);
     }

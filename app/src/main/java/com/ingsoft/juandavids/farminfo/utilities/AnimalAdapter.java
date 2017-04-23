@@ -1,14 +1,13 @@
 package com.ingsoft.juandavids.farminfo.utilities;
 
 import android.content.Context;
+import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.ImageView;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
 
+import com.ingsoft.juandavids.farminfo.MainActivity;
 import com.ingsoft.juandavids.farminfo.R;
 
 import java.util.ArrayList;
@@ -46,22 +45,23 @@ public class AnimalAdapter extends BaseAdapter {
     public View getView(int i, View view, ViewGroup viewGroup) {
 
         View cell = view;
-        ViewHolder holder;
+        AnimalViewHolder holder;
         if (cell == null) {
 
             LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             cell = inflater.inflate(R.layout.animal_icon, viewGroup, false);
-            holder = new ViewHolder(cell);
+            holder = new AnimalViewHolder(cell);
             cell.setTag(holder);
 
         } else {
-            holder = (ViewHolder) cell.getTag();
+            holder = (AnimalViewHolder) cell.getTag();
         }
 
         AnimalInfo animal = animalList.get(i);
         holder.animalInfo = animal;
         holder.animalImage.setImageResource(animal.imageId);
         holder.animalName.setText(animal.name);
+        holder.animalName.setTypeface(((MainActivity)context).typeFaces.get(1));
 
         return cell;
     }

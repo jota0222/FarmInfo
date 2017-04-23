@@ -37,7 +37,7 @@ MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Android\And
 	android:icon
 		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:8:9-43
 	android:theme
-		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:11:9-65
 activity#com.ingsoft.juandavids.farminfo.MainActivity
 ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:13:9-19:20
 	android:name
