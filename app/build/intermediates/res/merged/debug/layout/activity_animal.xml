@@ -99,7 +99,7 @@
         android:padding="5dp"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        app:srcCompat="@drawable/leftarrow"
+        android:src="@drawable/leftarrow"
         android:id="@+id/btnBack"
         android:scaleType="fitCenter"
         android:contentDescription="@string/back_text"
