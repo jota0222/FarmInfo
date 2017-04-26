@@ -68,7 +68,7 @@ public class Consumer {
      * @return the absolute url
      */
     private String getAbsoluteUrl(String relativeUrl) {
-        return "http://" + domain + "/resource" + relativeUrl;
+        return domain + "/resource" + relativeUrl;
     }
 
     /**

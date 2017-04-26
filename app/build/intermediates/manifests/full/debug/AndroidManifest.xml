@@ -37,7 +37,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.ingsoft.juandavids.farminfo.AnimalActivity" />
-        <activity android:name="com.ingsoft.juandavids.farminfo.DatabaseActivity" />
+        <activity android:name="com.ingsoft.juandavids.farminfo.MedicineActivity" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

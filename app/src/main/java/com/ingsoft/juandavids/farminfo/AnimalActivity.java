@@ -57,14 +57,14 @@ public class AnimalActivity extends AppCompatActivity {
     }
 
     public void btnMedicine_click(View view) {
-        Intent intent = new Intent(this, DatabaseActivity.class);
+        Intent intent = new Intent(this, MedicineActivity.class);
         intent.putExtra("animalGroup", animalInfo);
         intent.putExtra("dataBase", getString(R.string.medicine));
         startActivity(intent);
     }
 
     public void btnSlaughterhouse_click(View view) {
-        Intent intent = new Intent(this, DatabaseActivity.class);
+        Intent intent = new Intent(this, MedicineActivity.class);
         intent.putExtra("animalGroup", animalInfo);
         intent.putExtra("dataBase", getString(R.string.slaughterhouses));
         startActivity(intent);

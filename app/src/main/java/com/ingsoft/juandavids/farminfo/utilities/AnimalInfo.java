@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class AnimalInfo implements Parcelable{
     int imageId;
     public String name;
-    private ArrayList<String> animalTypesInBD;
+    public ArrayList<String> animalTypesInBD;
 
     private AnimalInfo(int imageId, String name){
         this.imageId = imageId;
@@ -111,5 +111,35 @@ public class AnimalInfo implements Parcelable{
         animalList.add(animal);
 
         return animalList;
+    }
+
+    public String getMedicineQuery() {
+        String query = "select %s where %s";
+        String select = "descripci_n_producto, clase, presentaci_n";
+        String where = "especie like '%" + this.animalTypesInBD.get(0) + "%'";
+        for (int i = 1; i < this.animalTypesInBD.size(); i++) {
+            if (this.animalTypesInBD.get(i).equals("Aves")) {
+                where += " OR especie = 'Aves'";
+            } else {
+                where += " OR especie like '%" + this.animalTypesInBD.get(i) + "%'";
+            }
+        }
+
+        return String.format(query, select, where);
+    }
+
+    public String getSlaughterhouseQuery() {
+        String query = "select %s where %s";
+        String select = "descripci_n_producto, clase, presentaci_n";
+        String where = "especie like '%" + this.animalTypesInBD.get(0) + "%'";
+        for (int i = 1; i < this.animalTypesInBD.size(); i++) {
+            if (this.animalTypesInBD.get(i).equals("Aves")) {
+                where += " OR especie = 'Aves'";
+            } else {
+                where += " OR especie like '%" + this.animalTypesInBD.get(i) + "%'";
+            }
+        }
+
+        return String.format(query, select, where);
     }
 }

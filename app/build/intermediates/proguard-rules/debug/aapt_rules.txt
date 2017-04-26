@@ -115,14 +115,14 @@
 # view AndroidManifest.xml #generated:39
 -keep class com.ingsoft.juandavids.farminfo.AnimalActivity { <init>(...); }
 
-# view AndroidManifest.xml #generated:40
--keep class com.ingsoft.juandavids.farminfo.DatabaseActivity { <init>(...); }
-
 # view AndroidManifest.xml #generated:32
 -keep class com.ingsoft.juandavids.farminfo.MainActivity { <init>(...); }
 
+# view AndroidManifest.xml #generated:40
+-keep class com.ingsoft.juandavids.farminfo.MedicineActivity { <init>(...); }
+
 # onClick res/layout/activity_animal.xml #generated:98
-# onClick res/layout/activity_database.xml #generated:59
+# onClick res/layout/activity_database.xml #generated:28
 -keepclassmembers class * { *** btnBack_click(...); }
 
 # onClick res/layout/activity_animal.xml #generated:63

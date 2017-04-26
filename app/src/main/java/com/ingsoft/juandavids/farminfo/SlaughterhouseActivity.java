@@ -3,8 +3,8 @@ package com.ingsoft.juandavids.farminfo;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -18,13 +18,12 @@ import com.socrata.android.client.Response;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DatabaseActivity extends AppCompatActivity {
+public class SlaughterhouseActivity extends AppCompatActivity {
 
     String dataBase;
     AnimalInfo animalInfo;
     ArrayList<Typeface> typeFaces;
     Consumer consumer;
-    List<Medicine> medicines;
     List<Medicine> laughterHouses;
 
     @Override
@@ -48,9 +47,9 @@ public class DatabaseActivity extends AppCompatActivity {
         consumer.getObjects("r6g7-nmt3.json", "select * where especie = 'Bovinos'", Medicine.class, new Callback<List<Medicine>>() {
             @Override
             public void onResults(Response<List<Medicine>> response) {
-                medicines = response.getEntity();
+                laughterHouses = response.getEntity();
                 //do somethings with earthquake
-                Log.i("farminfo", medicines.get(0).toString());
+                Log.i("farminfo", laughterHouses.get(0).toString());
             }
         });
 
@@ -69,8 +68,18 @@ public class DatabaseActivity extends AppCompatActivity {
         TextView title = (TextView) findViewById(R.id.AppTitleTextView);
         title.setTypeface(typeFaces.get(0));
 
-        TextView databaseTitle = (TextView) findViewById(R.id.databaseTextView);
-        databaseTitle.setText(dataBase + ":");
+        TextView databaseTitle = (TextView) findViewById(R.id.columna1);
+        databaseTitle.setText(String.format("%s:", getString(R.string.medicine)));
+        // Mejorando vista del título de la base de datos
+        databaseTitle.setTypeface(typeFaces.get(1));
+
+        databaseTitle = (TextView) findViewById(R.id.columna2);
+        databaseTitle.setText(String.format("%s:", getString(R.string.medicine)));
+        // Mejorando vista del título de la base de datos
+        databaseTitle.setTypeface(typeFaces.get(1));
+
+        databaseTitle = (TextView) findViewById(R.id.columna3);
+        databaseTitle.setText(String.format("%s:", getString(R.string.medicine)));
         // Mejorando vista del título de la base de datos
         databaseTitle.setTypeface(typeFaces.get(1));
     }

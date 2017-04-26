@@ -12,12 +12,12 @@
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-mdpi\\ic_media_route_off_mono_dark.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\ic_cast_dark.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-mdpi\\ic_cast_dark.png"
-    },
-    {
         "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\abc_textfield_search_default_mtrl_alpha.9.png",
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable-mdpi\\abc_textfield_search_default_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\ic_cast_dark.png",
+        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable-mdpi\\ic_cast_dark.png"
     },
     {
         "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\ic_media_route_disabled_mono_dark.png",

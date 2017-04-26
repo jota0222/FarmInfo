@@ -88,7 +88,7 @@ activity#com.ingsoft.juandavids.farminfo.AnimalActivity
 ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:21:9-52
 	android:name
 		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:21:19-49
-activity#com.ingsoft.juandavids.farminfo.DatabaseActivity
+activity#com.ingsoft.juandavids.farminfo.MedicineActivity
 ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:22:9-54
 	android:name
 		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:22:19-51

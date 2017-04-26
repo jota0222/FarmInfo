@@ -5,6 +5,11 @@
     <string name="medicine">Medicamentos</string>
     <string name="slaughterhouses">Plantas de Beneficio</string>
     <string name="search">Buscar</string>
+    <string name="medicineInfo">Descripción</string>
+    <string name="medicineType">Clase</string>
+    <string name="medicinePresentation">Presentación</string>
+    <string name="api_url">http://www.datos.gov.co</string>
+    <string name="api_token">6HI9A3324vqb88v5VbG2ouyGm</string>
     <string-array name="animal_names">
         <item>Aves de Corral</item>
         <item>Bovinos</item>
