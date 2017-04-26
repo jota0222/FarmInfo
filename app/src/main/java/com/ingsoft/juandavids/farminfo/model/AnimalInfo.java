@@ -1,4 +1,4 @@
-package com.ingsoft.juandavids.farminfo.utilities;
+package com.ingsoft.juandavids.farminfo.model;
 
 import android.content.res.Resources;
 import android.os.Parcel;
@@ -12,9 +12,9 @@ import java.util.ArrayList;
  * Creado por Juan David Hernández el 22/04/2017.
  */
 public class AnimalInfo implements Parcelable{
-    int imageId;
+    public int imageId;
     public String name;
-    public ArrayList<String> animalTypesInBD;
+    private ArrayList<String> animalTypesInBD;
 
     private AnimalInfo(int imageId, String name){
         this.imageId = imageId;
@@ -130,16 +130,12 @@ public class AnimalInfo implements Parcelable{
 
     public String getSlaughterhouseQuery() {
         String query = "select %s where %s";
-        String select = "descripci_n_producto, clase, presentaci_n";
-        String where = "especie like '%" + this.animalTypesInBD.get(0) + "%'";
+        String select = "razonsocial, departamento, municipio";
+        String where = "(especie like '%" + this.animalTypesInBD.get(0).toUpperCase() + "%'";
         for (int i = 1; i < this.animalTypesInBD.size(); i++) {
-            if (this.animalTypesInBD.get(i).equals("Aves")) {
-                where += " OR especie = 'Aves'";
-            } else {
-                where += " OR especie like '%" + this.animalTypesInBD.get(i) + "%'";
-            }
+                where += " OR especie like '%" + this.animalTypesInBD.get(i).toUpperCase() + "%'";
         }
-
+        where += ") AND (estadoactual like '%ABIERTA%' OR estadoactual like '%VISITA%')";
         return String.format(query, select, where);
     }
 }

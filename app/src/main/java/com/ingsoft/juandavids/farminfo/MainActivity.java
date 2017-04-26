@@ -10,9 +10,9 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.ingsoft.juandavids.farminfo.utilities.AnimalAdapter;
-import com.ingsoft.juandavids.farminfo.utilities.AnimalInfo;
-import com.ingsoft.juandavids.farminfo.utilities.AnimalViewHolder;
+import com.ingsoft.juandavids.farminfo.adapter.AnimalAdapter;
+import com.ingsoft.juandavids.farminfo.model.AnimalInfo;
+import com.ingsoft.juandavids.farminfo.view.AnimalViewHolder;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.ingsoft.juandavids.farminfo.DTO;
+package com.ingsoft.juandavids.farminfo.model;
 
 import android.util.Log;
 
@@ -50,10 +50,9 @@ public class Medicine {
 
     @Override
     public String toString(){
-        String data = String.format(
+        return String.format(
                 "Información: %s\n" +
                 "Clase: %s\n" +
                 "Presentación: %s\n", productInfo, type, presentation);
-        return data;
     }
 }

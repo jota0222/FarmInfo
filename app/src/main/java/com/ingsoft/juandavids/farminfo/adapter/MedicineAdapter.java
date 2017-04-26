@@ -1,4 +1,4 @@
-package com.ingsoft.juandavids.farminfo.utilities;
+package com.ingsoft.juandavids.farminfo.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,8 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-import com.ingsoft.juandavids.farminfo.DTO.Medicine;
+import com.ingsoft.juandavids.farminfo.model.Medicine;
 import com.ingsoft.juandavids.farminfo.R;
+import com.ingsoft.juandavids.farminfo.view.MedicineViewHolder;
 
 import java.util.List;
 

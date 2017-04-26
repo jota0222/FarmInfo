@@ -57,37 +57,41 @@ MERGED from [com.google.android.gms:play-services-tagmanager-api:9.0.2] C:\Andro
 MERGED from [com.google.android.gms:play-services-vision:9.0.2] C:\Android\AndroidStudioProjects\FarmInfo\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.0.2\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-wearable:9.0.2] C:\Android\AndroidStudioProjects\FarmInfo\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.0.2\AndroidManifest.xml:19:5-20
 	android:label
-		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:10:9-41
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:9:9-41
 	android:supportsRtl
-		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:10:9-35
 	tools:ignore
-		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:13:9-60
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:12:9-60
 	android:allowBackup
-		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:8:9-35
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:7:9-35
 	android:icon
-		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:9:9-43
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:8:9-43
 	android:theme
-		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:12:9-65
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:11:9-65
 	tools:replace
-		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:7:9-38
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:13:9-38
 activity#com.ingsoft.juandavids.farminfo.MainActivity
-ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:14:9-20:20
+ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:14:9-19:20
 	android:name
 		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:14:19-47
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:15:13-18:29
 action#android.intent.action.MAIN
 ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:16:17-69
 	android:name
 		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:16:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:17:17-77
 	android:name
-		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:17:27-74
 activity#com.ingsoft.juandavids.farminfo.AnimalActivity
-ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:21:9-52
+ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:20:9-52
 	android:name
-		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:21:19-49
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:20:19-49
+activity#com.ingsoft.juandavids.farminfo.SlaughterhouseActivity
+ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:21:9-60
+	android:name
+		ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:21:19-57
 activity#com.ingsoft.juandavids.farminfo.MedicineActivity
 ADDED from C:\Android\AndroidStudioProjects\FarmInfo\app\src\main\AndroidManifest.xml:22:9-54
 	android:name

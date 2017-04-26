@@ -1,16 +1,20 @@
 package com.ingsoft.juandavids.farminfo;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.ingsoft.juandavids.farminfo.DTO.Medicine;
-import com.ingsoft.juandavids.farminfo.utilities.AnimalInfo;
+import com.ingsoft.juandavids.farminfo.model.Slaughterhouse;
+import com.ingsoft.juandavids.farminfo.model.AnimalInfo;
+import com.ingsoft.juandavids.farminfo.adapter.SlaughterhouseAdapter;
 import com.socrata.android.client.Callback;
 import com.socrata.android.client.Consumer;
 import com.socrata.android.client.Response;
@@ -20,11 +24,10 @@ import java.util.List;
 
 public class SlaughterhouseActivity extends AppCompatActivity {
 
-    String dataBase;
     AnimalInfo animalInfo;
-    ArrayList<Typeface> typeFaces;
+    public ArrayList<Typeface> typeFaces;
     Consumer consumer;
-    List<Medicine> laughterHouses;
+    List<Slaughterhouse> slaughterhouses;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,54 +35,66 @@ public class SlaughterhouseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_database);
 
         Intent intent = getIntent();
-        dataBase = intent.getStringExtra("dataBase");
         animalInfo = intent.getParcelableExtra("animalGroup");
 
         setFonts();
 
-        /*
-        * TODO: llamada a la API de SOCRATA si dataBase == @string/medicine se busca en datos abiertos de animales
-        * sino se busca en plantas de beneficio animal.
-        * Se debe crear una tabla para mostrar la información adquirida
-        */
-        consumer = new Consumer("www.datos.gov.co", "6HI9A3324vqb88v5VbG2ouyGm");
-
-        consumer.getObjects("r6g7-nmt3.json", "select * where especie = 'Bovinos'", Medicine.class, new Callback<List<Medicine>>() {
-            @Override
-            public void onResults(Response<List<Medicine>> response) {
-                laughterHouses = response.getEntity();
-                //do somethings with earthquake
-                Log.i("farminfo", laughterHouses.get(0).toString());
-            }
-        });
+        fetchData();
 
 
         //TODO: implementar búsqued o filtros
+    }
+
+    private void fetchData() {
+        final ProgressBar progress = (ProgressBar) findViewById(R.id.progress);
+
+        final Context self = this;
+
+        consumer = new Consumer(getString(R.string.api_url), getString(R.string.api_token));
+
+        consumer.getObjects(getString(R.string.api_slaughterhouse_source), animalInfo.getSlaughterhouseQuery(), Slaughterhouse.class, new Callback<List<Slaughterhouse>>() {
+            @Override
+            public void onResults(Response<List<Slaughterhouse>> response) {
+                slaughterhouses = response.getEntity();
+
+                ListView medicineView = (ListView) findViewById(R.id.databaseListView);
+                medicineView.setAdapter(new SlaughterhouseAdapter(self, slaughterhouses));
+
+                progress.setVisibility(View.GONE);
+                medicineView.setVisibility(View.VISIBLE);
+            }
+        });
     }
 
     @SuppressLint("SetTextI18n")
     private void setFonts() {
         // Agregando fuentes
         typeFaces = new ArrayList<>();
-        typeFaces.add(Typeface.createFromAsset(getAssets(),"fonts/blackjar.ttf"));
-        typeFaces.add(Typeface.createFromAsset(getAssets(),"fonts/bloggersans.ttf"));
+        typeFaces.add(Typeface.createFromAsset(getAssets(), "fonts/blackjar.ttf"));
+        typeFaces.add(Typeface.createFromAsset(getAssets(), "fonts/bloggersans.ttf"));
 
         // Mejorando vista del título
         TextView title = (TextView) findViewById(R.id.AppTitleTextView);
         title.setTypeface(typeFaces.get(0));
 
         TextView databaseTitle = (TextView) findViewById(R.id.columna1);
-        databaseTitle.setText(String.format("%s:", getString(R.string.medicine)));
+        databaseTitle.setText(R.string.slaughterhouseName);
+        LinearLayout.LayoutParams lp = (LinearLayout.LayoutParams) databaseTitle.getLayoutParams();
+        lp.weight = 3f;
+        databaseTitle.setLayoutParams(lp);
         // Mejorando vista del título de la base de datos
         databaseTitle.setTypeface(typeFaces.get(1));
 
         databaseTitle = (TextView) findViewById(R.id.columna2);
-        databaseTitle.setText(String.format("%s:", getString(R.string.medicine)));
+        databaseTitle.setText(R.string.slaughterhouseDepartament);
         // Mejorando vista del título de la base de datos
         databaseTitle.setTypeface(typeFaces.get(1));
 
         databaseTitle = (TextView) findViewById(R.id.columna3);
-        databaseTitle.setText(String.format("%s:", getString(R.string.medicine)));
+        databaseTitle.setText(R.string.slaughterhouseTown);
+        lp = (LinearLayout.LayoutParams) databaseTitle.getLayoutParams();
+        lp.weight = 2f;
+        databaseTitle.setLayoutParams(lp);
         // Mejorando vista del título de la base de datos
         databaseTitle.setTypeface(typeFaces.get(1));
     }
@@ -87,4 +102,6 @@ public class SlaughterhouseActivity extends AppCompatActivity {
     public void btnBack_click(View view) {
         finish();
     }
+
+
 }

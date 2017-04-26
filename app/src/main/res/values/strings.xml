@@ -8,8 +8,10 @@
     <string name="medicineInfo">Descripción</string>
     <string name="medicineType">Clase</string>
     <string name="medicinePresentation">Presentación</string>
-    <string name="api_url">http://www.datos.gov.co</string>
-    <string name="api_token">6HI9A3324vqb88v5VbG2ouyGm</string>
+    <string name="slaughterhouseName">Razón Social</string>
+    <string name="slaughterhouseDepartament">Departamento</string>
+    <string name="slaughterhouseTown">Municipio</string>
+
     <string-array name="animal_names">
         <item>Aves de Corral</item>
         <item>Bovinos</item>

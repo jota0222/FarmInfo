@@ -294,6 +294,8 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="accept">Accept</string>
     <string name="animal_icon">Ícono del animal</string>
+    <string name="api_medicine_source">r6g7-nmt3.json</string>
+    <string name="api_slaughterhouse_source">t5s4-7bmp.json</string>
     <string name="api_token">6HI9A3324vqb88v5VbG2ouyGm</string>
     <string name="api_url">http://www.datos.gov.co</string>
     <string name="app_name">FarmInfo</string>
@@ -354,6 +356,9 @@
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
     <string name="search">Buscar</string>
+    <string name="slaughterhouseDepartament">Departamento</string>
+    <string name="slaughterhouseName">Razón Social</string>
+    <string name="slaughterhouseTown">Municipio</string>
     <string name="slaughterhouses">Plantas de Beneficio</string>
     <string name="status_bar_notification_info_overflow">999+</string>
     <string name="store_picture_message">"Allow Ad to store image in Picture gallery?"</string>

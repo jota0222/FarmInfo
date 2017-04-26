@@ -11,9 +11,9 @@ import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.ingsoft.juandavids.farminfo.DTO.Medicine;
-import com.ingsoft.juandavids.farminfo.utilities.AnimalInfo;
-import com.ingsoft.juandavids.farminfo.utilities.MedicineAdapter;
+import com.ingsoft.juandavids.farminfo.model.Medicine;
+import com.ingsoft.juandavids.farminfo.model.AnimalInfo;
+import com.ingsoft.juandavids.farminfo.adapter.MedicineAdapter;
 import com.socrata.android.client.Callback;
 import com.socrata.android.client.Consumer;
 import com.socrata.android.client.Response;
@@ -51,7 +51,7 @@ public class MedicineActivity extends AppCompatActivity {
 
         consumer = new Consumer(getString(R.string.api_url), getString(R.string.api_token));
 
-        consumer.getObjects("r6g7-nmt3.json", animalInfo.getMedicineQuery(), Medicine.class, new Callback<List<Medicine>>() {
+        consumer.getObjects(getString(R.string.api_medicine_source), animalInfo.getMedicineQuery(), Medicine.class, new Callback<List<Medicine>>() {
             @Override
             public void onResults(Response<List<Medicine>> response) {
                 medicines = response.getEntity();

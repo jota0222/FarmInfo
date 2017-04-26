@@ -1,27 +1,25 @@
-package com.ingsoft.juandavids.farminfo.utilities;
+package com.ingsoft.juandavids.farminfo.view;
 
 import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
 
-import com.ingsoft.juandavids.farminfo.DTO.Medicine;
+import com.ingsoft.juandavids.farminfo.model.Medicine;
 import com.ingsoft.juandavids.farminfo.MedicineActivity;
 import com.ingsoft.juandavids.farminfo.R;
 
 public class MedicineViewHolder {
-    TextView productInfo;
-    TextView type;
-    TextView presentation;
-    public Medicine medicine;
+    private TextView productInfo;
+    private TextView type;
+    private TextView presentation;
 
-    MedicineViewHolder(View v){
+    public MedicineViewHolder(View v){
         this.productInfo = (TextView) v.findViewById(R.id.lblMedicineInfo);
         this.type = (TextView) v.findViewById(R.id.lblMedicineType);
         this.presentation = (TextView) v.findViewById(R.id.lblMedicinePresentation);
     }
 
     public void setView(Medicine medicine, Context context) {
-        this.medicine = medicine;
 
         productInfo.setText(medicine.getProductInfo());
         productInfo.setTypeface(((MedicineActivity)context).typeFaces.get(1));

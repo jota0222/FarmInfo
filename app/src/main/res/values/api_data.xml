@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="api_url">http://www.datos.gov.co</string>
+    <string name="api_token">6HI9A3324vqb88v5VbG2ouyGm</string>
+    <string name="api_slaughterhouse_source" tools:ignore="TypographyDashes">t5s4-7bmp.json</string>
+    <string name="api_medicine_source">r6g7-nmt3.json</string>
+</resources>

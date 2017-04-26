@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.ingsoft.juandavids.farminfo.utilities.AnimalInfo;
+import com.ingsoft.juandavids.farminfo.model.AnimalInfo;
 
 import java.util.ArrayList;
 
@@ -59,14 +59,12 @@ public class AnimalActivity extends AppCompatActivity {
     public void btnMedicine_click(View view) {
         Intent intent = new Intent(this, MedicineActivity.class);
         intent.putExtra("animalGroup", animalInfo);
-        intent.putExtra("dataBase", getString(R.string.medicine));
         startActivity(intent);
     }
 
     public void btnSlaughterhouse_click(View view) {
-        Intent intent = new Intent(this, MedicineActivity.class);
+        Intent intent = new Intent(this, SlaughterhouseActivity.class);
         intent.putExtra("animalGroup", animalInfo);
-        intent.putExtra("dataBase", getString(R.string.slaughterhouses));
         startActivity(intent);
     }
 }

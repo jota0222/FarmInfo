@@ -2547,6 +2547,9 @@ containing a value of this type.
         public static final int lblMedicineInfo=0x7f0e009f;
         public static final int lblMedicinePresentation=0x7f0e00a1;
         public static final int lblMedicineType=0x7f0e00a0;
+        public static final int lblSlaughterhouseDepartament=0x7f0e00c5;
+        public static final int lblSlaughterhouseName=0x7f0e00c4;
+        public static final int lblSlaughterhouseTown=0x7f0e00c6;
         public static final int light=0x7f0e0044;
         public static final int line1=0x7f0e00b5;
         public static final int line3=0x7f0e00b8;
@@ -2583,7 +2586,7 @@ containing a value of this type.
         public static final int progress=0x7f0e009a;
         public static final int progress_circular=0x7f0e0007;
         public static final int progress_horizontal=0x7f0e0008;
-        public static final int progressbar=0x7f0e00c4;
+        public static final int progressbar=0x7f0e00c7;
         public static final int radio=0x7f0e0077;
         public static final int rfc822=0x7f0e0037;
         public static final int route_name=0x7f0e00a4;
@@ -2697,8 +2700,9 @@ containing a value of this type.
         public static final int select_dialog_item_material=0x7f04002c;
         public static final int select_dialog_multichoice_material=0x7f04002d;
         public static final int select_dialog_singlechoice_material=0x7f04002e;
-        public static final int soda_list_default=0x7f04002f;
-        public static final int support_simple_spinner_dropdown_item=0x7f040030;
+        public static final int slaughterhouse_item=0x7f04002f;
+        public static final int soda_list_default=0x7f040030;
+        public static final int support_simple_spinner_dropdown_item=0x7f040031;
     }
     public static final class mipmap {
         public static final int ic_launcher=0x7f030000;
@@ -2726,13 +2730,15 @@ containing a value of this type.
         public static final int abc_toolbar_collapse_description=0x7f070010;
         public static final int accept=0x7f07003e;
         public static final int animal_icon=0x7f07003f;
-        public static final int api_token=0x7f070040;
-        public static final int api_url=0x7f070041;
-        public static final int app_name=0x7f070042;
-        public static final int back_text=0x7f070043;
-        public static final int cast_notification_connected_message=0x7f070044;
-        public static final int cast_notification_connecting_message=0x7f070045;
-        public static final int cast_notification_disconnect=0x7f070046;
+        public static final int api_medicine_source=0x7f070040;
+        public static final int api_slaughterhouse_source=0x7f070041;
+        public static final int api_token=0x7f070042;
+        public static final int api_url=0x7f070043;
+        public static final int app_name=0x7f070044;
+        public static final int back_text=0x7f070045;
+        public static final int cast_notification_connected_message=0x7f070046;
+        public static final int cast_notification_connecting_message=0x7f070047;
+        public static final int cast_notification_disconnect=0x7f070048;
         public static final int common_google_play_services_api_unavailable_text=0x7f070011;
         public static final int common_google_play_services_enable_button=0x7f070012;
         public static final int common_google_play_services_enable_text=0x7f070013;
@@ -2764,14 +2770,14 @@ containing a value of this type.
         public static final int common_open_on_phone=0x7f07002d;
         public static final int common_signin_button_text=0x7f07002e;
         public static final int common_signin_button_text_long=0x7f07002f;
-        public static final int create_calendar_message=0x7f070047;
-        public static final int create_calendar_title=0x7f070048;
-        public static final int decline=0x7f070049;
-        public static final int medicine=0x7f07004a;
-        public static final int medicineInfo=0x7f07004b;
-        public static final int medicinePresentation=0x7f07004c;
-        public static final int medicineType=0x7f07004d;
-        public static final int more=0x7f07004e;
+        public static final int create_calendar_message=0x7f070049;
+        public static final int create_calendar_title=0x7f07004a;
+        public static final int decline=0x7f07004b;
+        public static final int medicine=0x7f07004c;
+        public static final int medicineInfo=0x7f07004d;
+        public static final int medicinePresentation=0x7f07004e;
+        public static final int medicineType=0x7f07004f;
+        public static final int more=0x7f070050;
         public static final int mr_media_route_button_content_description=0x7f070030;
         public static final int mr_media_route_chooser_searching=0x7f070031;
         public static final int mr_media_route_chooser_title=0x7f070032;
@@ -2785,15 +2791,18 @@ containing a value of this type.
         public static final int mr_user_route_category_name=0x7f07003a;
         public static final int place_autocomplete_clear_button=0x7f07003b;
         public static final int place_autocomplete_search_hint=0x7f07003c;
-        public static final int search=0x7f07004f;
-        public static final int slaughterhouses=0x7f070050;
+        public static final int search=0x7f070051;
+        public static final int slaughterhouseDepartament=0x7f070052;
+        public static final int slaughterhouseName=0x7f070053;
+        public static final int slaughterhouseTown=0x7f070054;
+        public static final int slaughterhouses=0x7f070055;
         public static final int status_bar_notification_info_overflow=0x7f07003d;
-        public static final int store_picture_message=0x7f070051;
-        public static final int store_picture_title=0x7f070052;
-        public static final int tagmanager_preview_dialog_button=0x7f070053;
-        public static final int tagmanager_preview_dialog_message=0x7f070054;
-        public static final int tagmanager_preview_dialog_title=0x7f070055;
-        public static final int wallet_buy_button_place_holder=0x7f070056;
+        public static final int store_picture_message=0x7f070056;
+        public static final int store_picture_title=0x7f070057;
+        public static final int tagmanager_preview_dialog_button=0x7f070058;
+        public static final int tagmanager_preview_dialog_message=0x7f070059;
+        public static final int tagmanager_preview_dialog_title=0x7f07005a;
+        public static final int wallet_buy_button_place_holder=0x7f07005b;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f09007c;
