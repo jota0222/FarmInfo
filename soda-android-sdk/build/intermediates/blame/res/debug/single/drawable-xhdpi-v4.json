@@ -216,12 +216,12 @@
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable-xhdpi\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\cast_ic_notification_1.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.0.2\\res\\drawable-xhdpi-v4\\cast_ic_notification_1.png"
-    },
-    {
         "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png",
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable-xhdpi-v4\\common_plus_signin_btn_icon_light_disabled.9.png"
+    },
+    {
+        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\cast_ic_notification_1.png",
+        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.0.2\\res\\drawable-xhdpi-v4\\cast_ic_notification_1.png"
     },
     {
         "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_cast_off_light.png",

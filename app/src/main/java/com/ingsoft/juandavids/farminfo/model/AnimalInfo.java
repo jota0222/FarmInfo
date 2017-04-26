@@ -62,7 +62,7 @@ public class AnimalInfo implements Parcelable{
         ArrayList<AnimalInfo> animalList = new ArrayList<>();
 
         AnimalInfo animal = new AnimalInfo(R.drawable.aves, animalStrings[0]);
-        animal.animalTypesInBD.add("Aves");
+        animal.animalTypesInBD.add("Ave");
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.ornamentales, animalStrings[7]);
@@ -70,44 +70,44 @@ public class AnimalInfo implements Parcelable{
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.bovinos, animalStrings[1]);
-        animal.animalTypesInBD.add("Bovinos");
-        animal.animalTypesInBD.add("Terneras");
-        animal.animalTypesInBD.add("Terneros");
+        animal.animalTypesInBD.add("Bovino");
+        animal.animalTypesInBD.add("Ternera");
+        animal.animalTypesInBD.add("Ternero");
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.caninos, animalStrings[2]);
-        animal.animalTypesInBD.add("Cachorros");
-        animal.animalTypesInBD.add("Caninos");
+        animal.animalTypesInBD.add("Cachorro");
+        animal.animalTypesInBD.add("Canino");
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.caprinos, animalStrings[3]);
-        animal.animalTypesInBD.add("Caprinos");
-        animal.animalTypesInBD.add("Ovicaprinos");
+        animal.animalTypesInBD.add("Caprino");
+        animal.animalTypesInBD.add("Ovicaprino");
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.conejos, animalStrings[4]);
-        animal.animalTypesInBD.add("Conejos");
+        animal.animalTypesInBD.add("Conejo");
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.equinos, animalStrings[5]);
-        animal.animalTypesInBD.add("Equinos");
-        animal.animalTypesInBD.add("Potros");
+        animal.animalTypesInBD.add("Equino");
+        animal.animalTypesInBD.add("Potro");
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.felinos, animalStrings[6]);
-        animal.animalTypesInBD.add("Felinos");
+        animal.animalTypesInBD.add("Felino");
         animal.animalTypesInBD.add("Pequeños Felinos");
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.ovinos, animalStrings[8]);
-        animal.animalTypesInBD.add("Borregos");
-        animal.animalTypesInBD.add("Ovicaprinos");
-        animal.animalTypesInBD.add("Ovinos");
+        animal.animalTypesInBD.add("Borrego");
+        animal.animalTypesInBD.add("Ovicaprino");
+        animal.animalTypesInBD.add("Ovino");
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.porcinos, animalStrings[9]);
-        animal.animalTypesInBD.add("Lechones");
-        animal.animalTypesInBD.add("Porcinos");
+        animal.animalTypesInBD.add("Lechon");
+        animal.animalTypesInBD.add("Porcino");
         animalList.add(animal);
 
         return animalList;
@@ -118,7 +118,7 @@ public class AnimalInfo implements Parcelable{
         String select = "descripci_n_producto, clase, presentaci_n";
         String where = "especie like '%" + this.animalTypesInBD.get(0) + "%'";
         for (int i = 1; i < this.animalTypesInBD.size(); i++) {
-            if (this.animalTypesInBD.get(i).equals("Aves")) {
+            if (this.animalTypesInBD.get(i).equals("Ave")) {
                 where += " OR especie = 'Aves'";
             } else {
                 where += " OR especie like '%" + this.animalTypesInBD.get(i) + "%'";
