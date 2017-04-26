@@ -21,7 +21,6 @@ public class Medicine {
     private String presentation;
 
     public Medicine() {
-        Log.i("farminfo", "Instance Medicine");
     }
 
     public String getProductInfo() {
