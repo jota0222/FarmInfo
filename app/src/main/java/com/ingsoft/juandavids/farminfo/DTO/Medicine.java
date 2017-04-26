@@ -1,5 +1,7 @@
 package com.ingsoft.juandavids.farminfo.DTO;
 
+import android.util.Log;
+
 import com.socrata.android.client.SodaEntity;
 import com.socrata.android.client.SodaField;
 
@@ -17,6 +19,10 @@ public class Medicine {
 
     @SodaField("presentaci_n")
     private String presentation;
+
+    public Medicine() {
+        Log.i("farminfo", "Instance Medicine");
+    }
 
     public String getProductInfo() {
         return productInfo;
@@ -40,5 +46,14 @@ public class Medicine {
 
     public void setPresentation(String presentation) {
         this.presentation = presentation;
+    }
+
+    @Override
+    public String toString(){
+        String data = String.format(
+                "Información: %s\n" +
+                "Clase: %s\n" +
+                "Presentación: %s\n", productInfo, type, presentation);
+        return data;
     }
 }

@@ -24,6 +24,8 @@ public class DatabaseActivity extends AppCompatActivity {
     AnimalInfo animalInfo;
     ArrayList<Typeface> typeFaces;
     Consumer consumer;
+    List<Medicine> medicines;
+    List<Medicine> laughterHouses;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,18 +39,18 @@ public class DatabaseActivity extends AppCompatActivity {
         setFonts();
 
         /*
-        *TODO: llamada a la API de SOCRATA si dataBase == @string/medicine se busca en datos abiertos de animales
+        * TODO: llamada a la API de SOCRATA si dataBase == @string/medicine se busca en datos abiertos de animales
         * sino se busca en plantas de beneficio animal.
         * Se debe crear una tabla para mostrar la información adquirida
         */
         consumer = new Consumer("www.datos.gov.co", "6HI9A3324vqb88v5VbG2ouyGm");
 
-        consumer.getObjects("r6g7-nmt3.json", "select * where especie = 'Bovinos'" , Medicine.class, new Callback<List<Medicine>>() {
+        consumer.getObjects("r6g7-nmt3.json", "select * where especie = 'Bovinos'", Medicine.class, new Callback<List<Medicine>>() {
             @Override
             public void onResults(Response<List<Medicine>> response) {
-                List<Medicine> medicines = response.getEntity();
+                medicines = response.getEntity();
                 //do somethings with earthquake
-                Log.d("PASSSSSSSSSSSSSSSSSSSSS", "");
+                Log.i("farminfo", medicines.get(0).toString());
             }
         });
 
