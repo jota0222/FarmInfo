@@ -902,7 +902,8 @@ public final class R {
 		public static final int select_dialog_multichoice_material = 0x7f030028;
 		public static final int select_dialog_singlechoice_material = 0x7f030029;
 		public static final int soda_list_default = 0x7f03002a;
-		public static final int support_simple_spinner_dropdown_item = 0x7f03002b;
+		public static final int soda_list_table = 0x7f03002b;
+		public static final int support_simple_spinner_dropdown_item = 0x7f03002c;
 	}
 	public static final class raw {
 		public static final int gtm_analytics = 0x7f050000;

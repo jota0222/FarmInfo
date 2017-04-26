@@ -13,17 +13,14 @@
 package com.socrata.android.ui.list;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Toast;
 
 import com.socrata.android.client.Callback;
 import com.socrata.android.client.Consumer;
 import com.socrata.android.client.Response;
-import com.socrata.android.client.ResponseError;
 import com.socrata.android.soql.Query;
 
 import java.util.ArrayList;
@@ -114,7 +111,7 @@ public class SodaBaseAdapter<Holder extends BindableView<Data>, Data> extends Ba
         inflater = LayoutInflater.from(context);
         this.holderType = holderType;
         if (!holderType.isAnnotationPresent(SodaHolder.class)) {
-            throw new IllegalArgumentException(String.format("%s is required in al Holder Types", SodaHolder.class.getName()));
+            throw new IllegalArgumentException(String.format("%s is required in all Holder Types", SodaHolder.class.getName()));
         }
         SodaHolder holderLayoutAnnotation = holderType.getAnnotation(SodaHolder.class);
         int value = holderLayoutAnnotation.value();

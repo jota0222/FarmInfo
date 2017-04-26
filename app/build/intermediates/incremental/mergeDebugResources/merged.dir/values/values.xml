@@ -294,6 +294,8 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="accept">Accept</string>
     <string name="animal_icon">Ícono del animal</string>
+    <string name="api_token">6HI9A3324vqb88v5VbG2ouyGm</string>
+    <string name="api_url">www.datos.gov.co</string>
     <string name="app_name">FarmInfo</string>
     <string name="back_text">Volver</string>
     <string name="cast_notification_connected_message">Connected to <ns1:g id="name">%1$s</ns1:g></string>
@@ -334,6 +336,9 @@
     <string name="create_calendar_title">Create calendar event</string>
     <string name="decline">Decline</string>
     <string name="medicine">Medicamentos</string>
+    <string name="medicineInfo">Descripción</string>
+    <string name="medicinePresentation">Presentación</string>
+    <string name="medicineType">Clase</string>
     <string name="more">More</string>
     <string name="mr_media_route_button_content_description">Cast</string>
     <string name="mr_media_route_chooser_searching">Searching for devices\u2026</string>

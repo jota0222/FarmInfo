@@ -16,3 +16,4 @@
 #   public *;
 #}
 -keep public class com.ingsoft.juandavids.farminfo.DTO.**
+-keep public class com.socrata.android.ui.list.**

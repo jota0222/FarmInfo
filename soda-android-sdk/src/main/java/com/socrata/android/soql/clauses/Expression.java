@@ -215,6 +215,20 @@ public class Expression implements BuildCapable {
     }
 
     /**
+     * Joins a left and right expression with an equals comparison operator e.g. 'a like b
+     */
+    public static Expression like(BuildCapable left, BuildCapable right) {
+        return applyOperator("like", left, right);
+    }
+
+    /**
+     * Joins a left and right expression with an equals comparison operator e.g. 'a like b
+     */
+    public static Expression like(String left, String right) {
+        return like(asExpression(left), asExpression(right));
+    }
+
+    /**
      * Joins a left and right expression with a not equals comparison operator e.g. 'a != b'
      */
     public static Expression neq(BuildCapable left, BuildCapable right) {

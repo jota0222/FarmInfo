@@ -4,93 +4,102 @@
     android:id="@+id/activity_database"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ingsoft.juandavids.farminfo.DatabaseActivity"
-    android:focusableInTouchMode="true">
+    android:focusableInTouchMode="true"
+    tools:context="com.ingsoft.juandavids.farminfo.DatabaseActivity">
+
     <TextView
-        android:text="@string/app_name"
-        android:textColor="#FFFFFF"
-        android:background="#007db3"
+        android:id="@+id/AppTitleTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:typeface="sans"
-        android:paddingTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#007db3"
         android:paddingBottom="8dp"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:text="@string/app_name"
         android:textAlignment="center"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/AppTitleTextView" />
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:typeface="sans" />
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_below="@+id/AppTitleTextView"
-        android:layout_alignParentStart="true"
         android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_above="@+id/frameLayout"
-        android:layout_height="match_parent">
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/AppTitleTextView">
 
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
             <TextView
-                android:text="Title Here:"
-                android:textColor="#FFFFFF"
-                android:background="#009CDE"
+                android:id="@+id/databaseTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="40sp"
-                android:typeface="sans"
-                android:paddingTop="18dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#009CDE"
                 android:paddingBottom="22dp"
                 android:paddingLeft="12dp"
                 android:paddingRight="12dp"
-                android:layout_alignParentTop="true"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/databaseTextView"
+                android:paddingTop="18dp"
+                android:text="Title Here:"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:typeface="sans"
                 tools:ignore="HardcodedText" />
 
+            <FrameLayout
+                android:id="@+id/tableDatabase"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/databaseTextView"
+                android:layout_alignParentStart="true" />
         </RelativeLayout>
-
     </ScrollView>
 
     <ImageView
-        android:padding="5dp"
+        android:id="@+id/btnBack"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:src="@drawable/leftarrow"
-        android:id="@+id/btnBack"
-        android:scaleType="fitCenter"
-        android:contentDescription="@string/back_text"
-        android:layout_alignParentStart="true"
         android:layout_above="@+id/scrollView"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:clickable="true"
-        android:onClick="btnBack_click"/>
+        android:contentDescription="@string/back_text"
+        android:onClick="btnBack_click"
+        android:padding="5dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/leftarrow" />
+
 
     <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:background="#009CDE"
-        android:paddingTop="7dp"
         android:paddingBottom="7dp"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
-        android:id="@+id/frameLayout">
+        android:paddingTop="7dp">
 
         <EditText
+            android:id="@+id/searchBox"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:inputType="textPersonName"
-            android:hint="@string/search"
-            android:id="@+id/searchBox"
-            android:textAlignment="center"
             android:background="@drawable/rounded_text_box"
+            android:hint="@string/search"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
             tools:ignore="LabelFor" />
     </FrameLayout>
+
+
 
 </RelativeLayout>

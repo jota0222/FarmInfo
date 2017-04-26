@@ -1,4 +1,4 @@
-package com.ingsoft.juandavids.farminfo.DTO;
+package com.ingsoft.juandavids.farminfo.model;
 
 import android.util.Log;
 
@@ -9,7 +9,7 @@ import com.socrata.android.client.SodaField;
  * Creado por Juan David Hernández el 23/04/2017.
  */
 @SodaEntity
-public class Medicine {
+public class Slaughterhouse {
 
     @SodaField("descripci_n_producto")
     private String productInfo;
@@ -20,7 +20,7 @@ public class Medicine {
     @SodaField("presentaci_n")
     private String presentation;
 
-    public Medicine() {
+    public Slaughterhouse() {
         Log.i("farminfo", "Instance Medicine");
     }
 

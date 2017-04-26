@@ -122,7 +122,7 @@
 -keep class com.ingsoft.juandavids.farminfo.MainActivity { <init>(...); }
 
 # onClick res/layout/activity_animal.xml #generated:98
-# onClick res/layout/activity_database.xml #generated:59
+# onClick res/layout/activity_database.xml #generated:65
 -keepclassmembers class * { *** btnBack_click(...); }
 
 # onClick res/layout/activity_animal.xml #generated:63

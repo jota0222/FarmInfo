@@ -160,6 +160,10 @@
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\abc_dialog_title_material.xml"
     },
     {
+        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\debug\\layout\\soda_list_table.xml",
+        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\src\\main\\res\\layout\\soda_list_table.xml"
+    },
+    {
         "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
         "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\layout\\notification_media_cancel_action.xml"
     },

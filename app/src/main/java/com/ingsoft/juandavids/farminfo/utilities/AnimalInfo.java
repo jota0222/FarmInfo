@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class AnimalInfo implements Parcelable{
     int imageId;
     public String name;
-    private ArrayList<String> animalTypesInBD;
+    public ArrayList<String> animalTypesInBD;
 
     private AnimalInfo(int imageId, String name){
         this.imageId = imageId;
