@@ -1,20 +1,23 @@
 package com.ingsoft.juandavids.farminfo;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.InputType;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.ingsoft.juandavids.farminfo.model.Slaughterhouse;
-import com.ingsoft.juandavids.farminfo.model.AnimalInfo;
 import com.ingsoft.juandavids.farminfo.adapter.SlaughterhouseAdapter;
+import com.ingsoft.juandavids.farminfo.model.AnimalInfo;
+import com.ingsoft.juandavids.farminfo.model.Slaughterhouse;
 import com.socrata.android.client.Callback;
 import com.socrata.android.client.Consumer;
 import com.socrata.android.client.Response;
@@ -24,10 +27,15 @@ import java.util.List;
 
 public class SlaughterhouseActivity extends AppCompatActivity {
 
-    AnimalInfo animalInfo;
-    public ArrayList<Typeface> typeFaces;
     Consumer consumer;
+
+    AnimalInfo animalInfo;
     List<Slaughterhouse> slaughterhouses;
+    List<Slaughterhouse> filteredSlaughterhouse;
+    ListView slaughterhouseView;
+
+    EditText searchBox;
+    public ArrayList<Typeface> typeFaces;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,14 +49,41 @@ public class SlaughterhouseActivity extends AppCompatActivity {
 
         fetchData();
 
+        setSearch();
+    }
 
-        //TODO: implementar búsqued o filtros
+    private void setSearch() {
+        searchBox = (EditText) findViewById(R.id.searchBox);
+        filteredSlaughterhouse = new ArrayList<>();
+
+        searchBox.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {}
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (slaughterhouses != null && slaughterhouses.size() != 0) {
+                    String searchText = s.toString().toLowerCase();
+
+                    filteredSlaughterhouse.clear();
+
+                    for (int i = 0; i < slaughterhouses.size(); i++) {
+                        Slaughterhouse item = slaughterhouses.get(i);
+                        if (item.getName().toLowerCase().contains(searchText)
+                                || item.getDepartament().toLowerCase().contains(searchText)
+                                || item.getTown().toLowerCase().contains(searchText)) {
+                            filteredSlaughterhouse.add(item);
+                        }
+                    }
+
+                    slaughterhouseView.setAdapter(new SlaughterhouseAdapter(SlaughterhouseActivity.this, filteredSlaughterhouse));
+                }
+            }
+        });
     }
 
     private void fetchData() {
         final ProgressBar progress = (ProgressBar) findViewById(R.id.progress);
-
-        final Context self = this;
 
         consumer = new Consumer(getString(R.string.api_url), getString(R.string.api_token));
 
@@ -57,11 +92,13 @@ public class SlaughterhouseActivity extends AppCompatActivity {
             public void onResults(Response<List<Slaughterhouse>> response) {
                 slaughterhouses = response.getEntity();
 
-                ListView medicineView = (ListView) findViewById(R.id.databaseListView);
-                medicineView.setAdapter(new SlaughterhouseAdapter(self, slaughterhouses));
+                slaughterhouseView = (ListView) findViewById(R.id.databaseListView);
+                slaughterhouseView.setAdapter(new SlaughterhouseAdapter(SlaughterhouseActivity.this, slaughterhouses));
 
+                searchBox.setInputType(InputType.TYPE_TEXT_VARIATION_PERSON_NAME);
+                searchBox.setEnabled(true);
                 progress.setVisibility(View.GONE);
-                medicineView.setVisibility(View.VISIBLE);
+                slaughterhouseView.setVisibility(View.VISIBLE);
             }
         });
     }

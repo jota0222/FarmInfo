@@ -57,9 +57,10 @@
             android:layout_height="45dp"
             android:background="@drawable/rounded_text_box"
             android:hint="@string/search"
-            android:inputType="textPersonName"
+            android:inputType="none"
             android:textAlignment="center"
-            tools:ignore="LabelFor" />
+            tools:ignore="LabelFor"
+            android:enabled="false"/>
     </FrameLayout>
 
     <RelativeLayout

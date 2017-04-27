@@ -1,19 +1,22 @@
 package com.ingsoft.juandavids.farminfo;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.InputType;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.ingsoft.juandavids.farminfo.model.Medicine;
-import com.ingsoft.juandavids.farminfo.model.AnimalInfo;
 import com.ingsoft.juandavids.farminfo.adapter.MedicineAdapter;
+import com.ingsoft.juandavids.farminfo.model.AnimalInfo;
+import com.ingsoft.juandavids.farminfo.model.Medicine;
 import com.socrata.android.client.Callback;
 import com.socrata.android.client.Consumer;
 import com.socrata.android.client.Response;
@@ -23,10 +26,16 @@ import java.util.List;
 
 public class MedicineActivity extends AppCompatActivity {
 
-    AnimalInfo animalInfo;
-    public ArrayList<Typeface> typeFaces;
     Consumer consumer;
+
+    AnimalInfo animalInfo;
     List<Medicine> medicines;
+    List<Medicine> filteredMedicines;
+    ListView medicineView;
+
+    EditText searchBox;
+
+    public ArrayList<Typeface> typeFaces;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,14 +49,41 @@ public class MedicineActivity extends AppCompatActivity {
 
         fetchData();
 
+        setSearch();
+    }
 
-        //TODO: implementar búsqued o filtros
+    private void setSearch() {
+        searchBox = (EditText) findViewById(R.id.searchBox);
+        filteredMedicines = new ArrayList<>();
+
+        searchBox.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {}
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (medicines != null && medicines.size() != 0) {
+                    String searchText = s.toString().toLowerCase();
+
+                    filteredMedicines.clear();
+
+                    for (int i = 0; i < medicines.size(); i++) {
+                        Medicine item = medicines.get(i);
+                        if (item.getProductInfo().toLowerCase().contains(searchText)
+                                || item.getType().toLowerCase().contains(searchText)
+                                || item.getPresentation().toLowerCase().contains(searchText)) {
+                            filteredMedicines.add(item);
+                        }
+                    }
+
+                    medicineView.setAdapter(new MedicineAdapter(MedicineActivity.this, filteredMedicines));
+                }
+            }
+        });
     }
 
     private void fetchData() {
         final ProgressBar progress = (ProgressBar) findViewById(R.id.progress);
-
-        final Context self = this;
 
         consumer = new Consumer(getString(R.string.api_url), getString(R.string.api_token));
 
@@ -56,9 +92,11 @@ public class MedicineActivity extends AppCompatActivity {
             public void onResults(Response<List<Medicine>> response) {
                 medicines = response.getEntity();
 
-                ListView medicineView = (ListView) findViewById(R.id.databaseListView);
-                medicineView.setAdapter(new MedicineAdapter(self, medicines));
+                medicineView = (ListView) findViewById(R.id.databaseListView);
+                medicineView.setAdapter(new MedicineAdapter(MedicineActivity.this, medicines));
 
+                searchBox.setInputType(InputType.TYPE_TEXT_VARIATION_PERSON_NAME);
+                searchBox.setEnabled(true);
                 progress.setVisibility(View.GONE);
                 medicineView.setVisibility(View.VISIBLE);
             }
