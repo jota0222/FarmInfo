@@ -1,226 +1,226 @@
 [
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ovinos.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\ovinos.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_text_cursor_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_mono_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_connecting_mono_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_play_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\porcinos.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\porcinos.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_pause_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\felinos.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\felinos.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\felinos.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\felinos.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_dialog_material_background_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_mono_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_text_box.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\rounded_text_box.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ovinos.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\ovinos.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_cast_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_settings_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_item_background_holo_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_item_background_holo_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_cast_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_pause_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_edit_text_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_textfield_search_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buttonpush.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\buttonpush.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_dialog_material_background_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rounded_text_box.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\rounded_text_box.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_text_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_btn_colored_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_switch_thumb_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_btn_borderless_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\aves.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\aves.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\conejos.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\conejos.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_list_selector_holo_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_tab_indicator_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_mono_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\caninos.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\caninos.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_btn_colored_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_play_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_pause_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_connecting_mono_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_connecting_mono_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\buttonpush.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\buttonpush.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bovinos.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\bovinos.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\porcinos.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\porcinos.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_cast_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_cast_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_cast_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_play_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\leftarrow.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\leftarrow.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_ratingbar_full_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_btn_borderless_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ornamentales.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\ornamentales.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_mono_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_mono_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ornamentales.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\ornamentales.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\caninos.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\caninos.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_settings_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_play_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_play_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\leftarrow.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\leftarrow.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\aves.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\aves.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_list_selector_holo_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_cab_background_top_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_btn_check_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_media_route_connecting_mono_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_media_route_connecting_mono_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\equinos.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\equinos.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.0.2\\res\\drawable\\cast_ic_notification_connecting.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\cast_ic_notification_connecting.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-cast\\9.0.2\\res\\drawable\\cast_ic_notification_connecting.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\equinos.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\equinos.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_edit_text_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\caprinos.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\caprinos.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\conejos.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\src\\main\\res\\drawable\\conejos.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_pause_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_pause_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_btn_radio_material.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\9.0.2\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bovinos.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\bovinos.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_light.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_settings_light.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.0.0\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\mr_ic_settings_dark.xml",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\mediarouter-v7\\23.0.0\\res\\drawable\\mr_ic_settings_dark.xml"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\caprinos.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\app\\src\\main\\res\\drawable\\caprinos.png"
     }
 ]

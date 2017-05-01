@@ -11,15 +11,18 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning"
         tools:replace="android:theme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+
+
+        <activity android:name=".AnimalActivity" />
+        <activity android:name=".SlaughterhouseActivity" />
+        <activity android:name=".MedicineActivity" />
+        <activity android:name=".SplashActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AnimalActivity" />
-        <activity android:name=".SlaughterhouseActivity" />
-        <activity android:name=".MedicineActivity" />
     </application>
 
 </manifest>

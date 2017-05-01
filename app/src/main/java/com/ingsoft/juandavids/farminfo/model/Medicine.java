@@ -5,11 +5,13 @@ import android.util.Log;
 import com.socrata.android.client.SodaEntity;
 import com.socrata.android.client.SodaField;
 
+import java.io.Serializable;
+
 /**
  * Creado por Juan David Hernández el 23/04/2017.
  */
 @SodaEntity
-public class Medicine {
+public class Medicine implements Serializable{
 
     @SodaField("descripci_n_producto")
     private String productInfo;

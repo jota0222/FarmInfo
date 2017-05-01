@@ -1,18 +1,18 @@
 [
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\places_ic_search.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxxhdpi-v4\\places_ic_search.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\places_ic_search.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxxhdpi-v4\\places_ic_search.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\places_ic_clear.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxxhdpi-v4\\places_ic_clear.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\powered_by_google_dark.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxxhdpi-v4\\powered_by_google_dark.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\powered_by_google_light.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxxhdpi-v4\\powered_by_google_light.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\powered_by_google_light.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxxhdpi-v4\\powered_by_google_light.png"
     },
     {
-        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\powered_by_google_dark.png",
-        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxxhdpi-v4\\powered_by_google_dark.png"
+        "merged": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\places_ic_clear.png",
+        "source": "C:\\Users\\Admin\\Downloads\\FarmInfo-master\\FarmInfo-master\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\drawable-xxxhdpi-v4\\places_ic_clear.png"
     }
 ]
