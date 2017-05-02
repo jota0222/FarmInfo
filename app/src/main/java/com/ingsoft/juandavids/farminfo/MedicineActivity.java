@@ -1,19 +1,13 @@
 package com.ingsoft.juandavids.farminfo;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Typeface;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Editable;
 import android.text.InputType;
 import android.text.TextWatcher;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -24,15 +18,16 @@ import android.widget.Toast;
 import com.ingsoft.juandavids.farminfo.adapter.MedicineAdapter;
 import com.ingsoft.juandavids.farminfo.model.AnimalInfo;
 import com.ingsoft.juandavids.farminfo.model.Medicine;
+import com.ingsoft.juandavids.farminfo.util.Utilities;
 import com.socrata.android.client.Callback;
 import com.socrata.android.client.Consumer;
 import com.socrata.android.client.Response;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
@@ -44,10 +39,11 @@ public class MedicineActivity extends AppCompatActivity {
 
     AnimalInfo animalInfo;
     List<Medicine> medicines;
-    List<Medicine> filteredMedicines;
+    List<Medicine> filteredMedicine;
+
     ListView medicineView;
-    List<Medicine> medicineOff;
     EditText searchBox;
+    ProgressBar progress;
 
     public ArrayList<Typeface> typeFaces;
 
@@ -56,197 +52,144 @@ public class MedicineActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_database);
 
-        Intent intent = getIntent();
-        animalInfo = intent.getParcelableExtra("animalGroup");
+        init();
 
         setFonts();
 
-        if(checkConnection(this)){
-            fetchData();
-            setSearch();
-        }
-        else {
-            medicineOff = loadOffline();
-            if (medicineOff != null){
-                viewOffline(medicineOff);
-                searchOff();
-            }
+        fetchData();
 
-        }
-
+        setSearch();
     }
 
-    public void setSearch() {
-
+    private void init() {
+        Intent intent = getIntent();
+        animalInfo = intent.getParcelableExtra("animalGroup");
+        medicineView = (ListView) findViewById(R.id.databaseListView);
+        progress = (ProgressBar) findViewById(R.id.progress);
         searchBox = (EditText) findViewById(R.id.searchBox);
-        filteredMedicines = new ArrayList<>();
-
-        searchBox.addTextChangedListener(new TextWatcher() {
-            public void afterTextChanged(Editable s) {}
-
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (medicines != null && medicines.size() != 0) {
-                    String searchText = s.toString().toLowerCase();
-
-                    filteredMedicines.clear();
-
-                    for (int i = 0; i < medicines.size(); i++) {
-                        Medicine item = medicines.get(i);
-                        if (item.getProductInfo().toLowerCase().contains(searchText)
-                                || item.getType().toLowerCase().contains(searchText)
-                                || item.getPresentation().toLowerCase().contains(searchText)) {
-                            filteredMedicines.add(item);
-                        }
-                    }
-
-                    medicineView.setAdapter(new MedicineAdapter(MedicineActivity.this, filteredMedicines));
-                }
-            }
-        });
-    }
-
-    private void searchOff() {
-
-        searchBox = (EditText) findViewById(R.id.searchBox);
-        filteredMedicines = new ArrayList<>();
-
-        searchBox.addTextChangedListener(new TextWatcher() {
-            public void afterTextChanged(Editable s) {}
-
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                if (medicineOff != null && medicineOff.size() != 0) {
-                    String searchText = s.toString().toLowerCase();
-
-                    filteredMedicines.clear();
-
-                    for (int i = 0; i < medicineOff.size(); i++) {
-                        Medicine item = medicineOff.get(i);
-                        if (item.getProductInfo().toLowerCase().contains(searchText)
-                                || item.getType().toLowerCase().contains(searchText)
-                                || item.getPresentation().toLowerCase().contains(searchText)) {
-                            filteredMedicines.add(item);
-                        }
-                    }
-
-                    medicineView.setAdapter(new MedicineAdapter(MedicineActivity.this, filteredMedicines));
-                }
-            }
-        });
     }
 
     private void fetchData() {
-        final ProgressBar progress = (ProgressBar) findViewById(R.id.progress);
+        if (Utilities.hasConection(this)) {
+            fetchDataFromAPI();
+        } else {
+            fetchDataFromFile();
+            if (medicines != null) {
+                addDataToView();
+            }
+        }
+    }
 
+    private void fetchDataFromAPI() {
         consumer = new Consumer(getString(R.string.api_url), getString(R.string.api_token));
 
         consumer.getObjects(getString(R.string.api_medicine_source), animalInfo.getMedicineQuery(), Medicine.class, new Callback<List<Medicine>>() {
             @Override
             public void onResults(Response<List<Medicine>> response) {
                 medicines = response.getEntity();
-                saveOffline(medicines);
 
-                medicineView = (ListView) findViewById(R.id.databaseListView);
-                medicineView.setAdapter(new MedicineAdapter(MedicineActivity.this, medicines));
+                saveToFile();
 
-                searchBox.setInputType(InputType.TYPE_TEXT_VARIATION_PERSON_NAME);
-                searchBox.setEnabled(true);
-                progress.setVisibility(View.GONE);
-                medicineView.setVisibility(View.VISIBLE);
+                addDataToView();
             }
         });
     }
 
-    private List<Medicine> loadOffline(){
+    private void fetchDataFromFile() {
+        String databaseName = getString(R.string.medicine);
 
-        List<Medicine> medicinesOff = null;
-
-            try {
-                File path = getFilesDir();
-                File newDirectory = new File(path, "medicamentos");
-
-                if (newDirectory.exists()) {
-                    File archive = new File(newDirectory.getAbsolutePath(), animalInfo.name + ".dat");
-
-                    if (archive.exists()) {
-                        FileInputStream fileIn = new FileInputStream(archive);
-                        ObjectInputStream reader = new ObjectInputStream(fileIn);
-                        medicinesOff = (List<Medicine>) reader.readObject();
-                        reader.close();
-                        fileIn.close();
-
-                    }
-                     else {
-                            Toast alert = Toast.makeText(this, "Atención, no se han hallado medicinas para este animal.\n" +
-                                    "Por favor, conéctese a la red y carguelos por primera vez, luego de esto estarán disponibles" +
-                                    " en cualquier momento.", Toast.LENGTH_LONG);
-                            alert.setGravity(Gravity.CENTER_VERTICAL, 0, 0);
-                            alert.show();
-
-                    }
-                }
+        try {
+            File path = getFilesDir();
+            File newDirectory = new File(path, databaseName);
+            if (!newDirectory.exists()) {
+                newDirectory.mkdir();
             }
-            catch(FileNotFoundException e){}
-            catch(IOException e){}
-            catch (ClassNotFoundException e){}
 
-        return medicinesOff;
+            File archive = new File(newDirectory.getAbsolutePath(), animalInfo.name + ".dat");
+            if (!archive.exists()) {
+                InputStream asset = getAssets().open("medicines/" + animalInfo.animalTypesInBD.get(2));
+                archive = Utilities.createFileFromInputStream(this, asset, archive.getAbsolutePath());
+            }
+
+            if (archive != null) {
+                FileInputStream fileIn = new FileInputStream(archive);
+                ObjectInputStream reader = new ObjectInputStream(fileIn);
+
+                medicines = (List<Medicine>) reader.readObject();
+
+                reader.close();
+                fileIn.close();
+            }
+
+            Utilities.showAlert(this, getString(R.string.noUpdatedMessage, databaseName));
+
+        } catch (IOException | ClassNotFoundException e) {
+            Utilities.showAlert(this, e.getMessage());
+        }
     }
 
-    private void saveOffline(List<Medicine> list){
-
-            try {
-                File path = getFilesDir();
-                File newDirectory = new File(path, "medicamentos");
-                if(!newDirectory.exists()) {
-                    newDirectory.mkdirs();
-                }
-
-                File archive = new File(newDirectory.getAbsolutePath(), animalInfo.name + ".dat");
-
-                if (!archive.exists()) {
-                    FileOutputStream fileOut = new FileOutputStream(archive);
-                    ObjectOutputStream writer = new ObjectOutputStream(fileOut);
-                    writer.writeObject(list);
-                    writer.close();
-                    fileOut.close();
-                }
-
-            }
-            catch(FileNotFoundException e){}
-            catch(IOException e){}
-
-    }
-
-    private void viewOffline(List<Medicine> list){
-        final ProgressBar progress = (ProgressBar) findViewById(R.id.progress);
+    private void setSearch() {
         searchBox = (EditText) findViewById(R.id.searchBox);
+        filteredMedicine = new ArrayList<>();
 
-        medicineView = (ListView) findViewById(R.id.databaseListView);
-        medicineView.setAdapter(new MedicineAdapter(MedicineActivity.this, list));
+        searchBox.addTextChangedListener(new TextWatcher() {
+            public void afterTextChanged(Editable s) {
+            }
+
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
+
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (medicines != null && medicines.size() != 0) {
+                    String searchText = s.toString().toLowerCase();
+
+                    filteredMedicine.clear();
+
+                    for (int i = 0; i < medicines.size(); i++) {
+                        Medicine item = medicines.get(i);
+                        if (item.getProductInfo().toLowerCase().contains(searchText)
+                                || item.getType().toLowerCase().contains(searchText)
+                                || item.getPresentation().toLowerCase().contains(searchText)) {
+                            filteredMedicine.add(item);
+                        }
+                    }
+
+                    medicineView.setAdapter(new MedicineAdapter(MedicineActivity.this, filteredMedicine));
+                }
+            }
+        });
+    }
+
+    private void saveToFile() {
+        String databaseName = getString(R.string.medicine);
+
+        try {
+            File path = getFilesDir();
+
+            File newDirectory = new File(path, databaseName);
+            if (!newDirectory.exists()) {
+                newDirectory.mkdirs();
+            }
+
+            File data = new File(newDirectory.getAbsolutePath(), animalInfo.name + ".dat");
+            FileOutputStream fileOut = new FileOutputStream(data, false); // no append
+            ObjectOutputStream writer = new ObjectOutputStream(fileOut);
+            writer.writeObject(medicines);
+            writer.close();
+            fileOut.close();
+        } catch (IOException e) {
+            Toast alert = Toast.makeText(this, e.getMessage(), Toast.LENGTH_LONG);
+            alert.show();
+        }
+    }
+
+    private void addDataToView() {
+        medicineView.setAdapter(new MedicineAdapter(MedicineActivity.this, medicines));
 
         searchBox.setInputType(InputType.TYPE_TEXT_VARIATION_PERSON_NAME);
         searchBox.setEnabled(true);
         progress.setVisibility(View.GONE);
         medicineView.setVisibility(View.VISIBLE);
-
-    }
-
-    public boolean checkConnection(Context context) {
-        ConnectivityManager manager = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo netInfo = manager.getActiveNetworkInfo();
-        boolean state;
-
-        if(netInfo != null && netInfo.isAvailable() && netInfo.isConnected()){
-            state = true;
-        }
-        else{
-            state = false;
-        }
-        return state;
     }
 
     @SuppressLint("SetTextI18n")
@@ -276,7 +219,4 @@ public class MedicineActivity extends AppCompatActivity {
     public void btnBack_click(View view) {
         finish();
     }
-
-
-
 }

@@ -24,24 +24,12 @@ public class Slaughterhouse implements Serializable{
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getDepartament() {
         return departament;
     }
 
-    public void setDepartament(String departament) {
-        this.departament = departament;
-    }
-
     public String getTown() {
         return town;
-    }
-
-    public void setTown(String town) {
-        this.town = town;
     }
 
     @Override

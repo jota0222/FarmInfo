@@ -1,6 +1,6 @@
 [
     {
-        "merged": "C:\\Users\\Admin\\Documents\\GitHub\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\place_autocomplete_fragment.xml",
-        "source": "C:\\Users\\Admin\\Documents\\GitHub\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\layout-v21\\place_autocomplete_fragment.xml"
+        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\layout-v21\\place_autocomplete_fragment.xml",
+        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-location\\9.0.2\\res\\layout-v21\\place_autocomplete_fragment.xml"
     }
 ]

@@ -1,6 +1,6 @@
 [
     {
-        "merged": "C:\\Users\\Admin\\Documents\\GitHub\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\gtm_analytics",
-        "source": "C:\\Users\\Admin\\Documents\\GitHub\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics-impl\\9.0.2\\res\\raw\\gtm_analytics"
+        "merged": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\res\\merged\\androidTest\\debug\\raw\\gtm_analytics",
+        "source": "C:\\Android\\AndroidStudioProjects\\FarmInfo\\soda-android-sdk\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-analytics-impl\\9.0.2\\res\\raw\\gtm_analytics"
     }
 ]

@@ -11,6 +11,8 @@
     <string name="slaughterhouseName">Razón Social</string>
     <string name="slaughterhouseDepartament">Departamento</string>
     <string name="slaughterhouseTown">Municipio</string>
+    <string name="logo_description">Logo FarmInfo</string>
+    <string name="noUpdatedMessage">Atención, es necesario actualizar la lista de %s para este animal. Por favor, conéctese a la red.</string>
 
     <string-array name="animal_names">
         <item>Aves de Corral</item>
