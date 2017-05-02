@@ -1,7 +1,5 @@
 package com.ingsoft.juandavids.farminfo.model;
 
-import android.util.Log;
-
 import com.socrata.android.client.SodaEntity;
 import com.socrata.android.client.SodaField;
 
@@ -22,31 +20,16 @@ public class Medicine implements Serializable{
     @SodaField("presentaci_n")
     private String presentation;
 
-    public Medicine() {
-    }
-
     public String getProductInfo() {
         return productInfo;
-    }
-
-    public void setProductInfo(String productInfo) {
-        this.productInfo = productInfo;
     }
 
     public String getType() {
         return type;
     }
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
     public String getPresentation() {
         return presentation;
-    }
-
-    public void setPresentation(String presentation) {
-        this.presentation = presentation;
     }
 
     @Override

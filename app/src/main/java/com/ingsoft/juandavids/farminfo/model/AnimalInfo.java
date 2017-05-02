@@ -11,12 +11,12 @@ import java.util.ArrayList;
 /**
  * Creado por Juan David Hernández el 22/04/2017.
  */
-public class AnimalInfo implements Parcelable{
+public class AnimalInfo implements Parcelable {
     public int imageId;
     public String name;
-    private ArrayList<String> animalTypesInBD;
+    public ArrayList<String> animalTypesInBD;
 
-    private AnimalInfo(int imageId, String name){
+    private AnimalInfo(int imageId, String name) {
         this.imageId = imageId;
         this.name = name;
         this.animalTypesInBD = new ArrayList<>();
@@ -24,7 +24,7 @@ public class AnimalInfo implements Parcelable{
         this.animalTypesInBD.add("Acondicionador");
     }
 
-    private AnimalInfo(Parcel source){
+    private AnimalInfo(Parcel source) {
         this.imageId = source.readInt();
         this.name = source.readString();
         this.animalTypesInBD = source.createStringArrayList();
@@ -76,8 +76,8 @@ public class AnimalInfo implements Parcelable{
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.caninos, animalStrings[2]);
-        animal.animalTypesInBD.add("Cachorro");
         animal.animalTypesInBD.add("Canino");
+        animal.animalTypesInBD.add("Cachorro");
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.caprinos, animalStrings[3]);
@@ -100,14 +100,14 @@ public class AnimalInfo implements Parcelable{
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.ovinos, animalStrings[8]);
+        animal.animalTypesInBD.add("Ovino");
         animal.animalTypesInBD.add("Borrego");
         animal.animalTypesInBD.add("Ovicaprino");
-        animal.animalTypesInBD.add("Ovino");
         animalList.add(animal);
 
         animal = new AnimalInfo(R.drawable.porcinos, animalStrings[9]);
-        animal.animalTypesInBD.add("Lechon");
         animal.animalTypesInBD.add("Porcino");
+        animal.animalTypesInBD.add("Lechon");
         animalList.add(animal);
 
         return animalList;
@@ -133,7 +133,7 @@ public class AnimalInfo implements Parcelable{
         String select = "razonsocial, departamento, municipio";
         String where = "(especie like '%" + this.animalTypesInBD.get(0).toUpperCase() + "%'";
         for (int i = 1; i < this.animalTypesInBD.size(); i++) {
-                where += " OR especie like '%" + this.animalTypesInBD.get(i).toUpperCase() + "%'";
+            where += " OR especie like '%" + this.animalTypesInBD.get(i).toUpperCase() + "%'";
         }
         where += ") AND (estadoactual like '%ABIERTA%' OR estadoactual like '%VISITA%')";
         return String.format(query, select, where);

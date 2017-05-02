@@ -337,6 +337,7 @@
     <string name="create_calendar_message">Allow Ad to create a calendar event?</string>
     <string name="create_calendar_title">Create calendar event</string>
     <string name="decline">Decline</string>
+    <string name="logo_description">Logo FarmInfo</string>
     <string name="medicine">Medicamentos</string>
     <string name="medicineInfo">Descripción</string>
     <string name="medicinePresentation">Presentación</string>
@@ -353,6 +354,7 @@
     <string name="mr_media_route_controller_stop">Stop casting</string>
     <string name="mr_system_route_name">System</string>
     <string name="mr_user_route_category_name">Devices</string>
+    <string name="noUpdatedMessage">Atención, es necesario actualizar la lista de %s para este animal. Por favor, conéctese a la red.</string>
     <string name="place_autocomplete_clear_button">Clear search</string>
     <string name="place_autocomplete_search_hint">Search</string>
     <string name="search">Buscar</string>
